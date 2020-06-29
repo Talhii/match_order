@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Profile</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="profile.js"></script>
+</head>
+<body>
+   
+    <h1>Enter your name here</h1>
+    <input type="text" size="100" style="height:20px" id="name-input">
+    <br>
+    <br>
+    <button type="submit" id="send-name" style="width:200px">Proceed</button>
+
+    <br>
+    <br>
+    <div id="connected"></div>
+    <br>
+    <h4><b>Note : First Enter User</b></h4>
+    <br>
+    
+
+    <h2>Enter your bid here</h2>
+    <input type="text" size="70" id="bid-input">
+
+    <button type="submit" id="send-bid">Send bid</button>
+    <button type="submit" id="matchbestask">Order with best price</button>
+
+    <br>
+    <br>
+   
+
+    
+    <div id="yourbid"></div>
+    <div id="container"></div>
+
+    <h3>Enter your ask here</h3>
+    <input type="text" size="70" id="ask-input">
+    <button type="submit" id="send-ask">Send ask</button>
+    <button type="submit" id="matchbestbid">Order with best price</button>
+
+    <div id="yourask"></div>
+    <div id="container1"></div>
+
+
+    <div id="order-matching"></div>
+</body>
+</html>
